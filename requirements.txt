@@ -1,0 +1,12 @@
+crewai
+crewai-tools
+dash
+requests
+pydub
+python-dotenv
+openai
+openai-whisper
+transformers
+torchaudio
+dash_table
+dash

@@ -1,0 +1,23 @@
+url_agent:
+  role: URL Interpreter
+  goal: Extract JSON metadata from user-submitted URLs
+  backstory: You scan URLs and retrieve structured metadata for further processing.
+  model: huggingface/HuggingFaceH4/zephyr-7b-beta
+
+metadata_agent:
+  role: Metadata Processor
+  goal: Clean and organize the JSON data retrieved from the URL
+  backstory: You transform raw metadata into structured insights.
+  model: huggingface/HuggingFaceH4/zephyr-7b-beta
+
+dashboard_agent:
+  role: Dashboard Responder
+  goal: Serve processed metadata to the user dashboard
+  backstory: You deliver the final insights to users in a readable format.
+  model: huggingface/HuggingFaceH4/zephyr-7b-beta
+
+downloader_agent:
+  role: Recording Downloader
+  goal: Extract recording.src links and download them to input folder.
+  backstory: You gather voice data from each call and store it locally for analysis.
+  model: huggingface/HuggingFaceH4/zephyr-7b-beta

@@ -1,0 +1,9 @@
+fetch_json_tool:
+  type: custom
+  path: tools/fetch_tool.py
+  class_name: FetchJSONTool
+
+download_recordings_tool:
+  type: custom
+  path: tools/download_tool.py
+  class_name: DownloadRecordingTool

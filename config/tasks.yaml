@@ -1,0 +1,15 @@
+parse_url_task:
+  description: Use the input URL to fetch and extract metadata using the fetch_json_tool.
+  expected_output: Raw JSON metadata
+
+process_metadata_task:
+  description: Clean and organize the fetched metadata.
+  expected_output: Structured metadata ready for display
+
+download_recordings_task:
+  description: Extract and download recording.src files from the metadata
+  expected_output: All audio recordings saved to input folder
+
+display_task:
+  description: Render metadata in dashboard format
+  expected_output: Formatted result string to return to user
